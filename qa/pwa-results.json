@@ -1,0 +1,1065 @@
+{
+  "passed": 223,
+  "date": "2026-10-13T15:12:38.105Z",
+  "bytesCached": 97894194,
+  "installability": [],
+  "checks": [
+    {
+      "name": "First visit does not autoplay or load the audio element",
+      "passed": true
+    },
+    {
+      "name": "Interrupted preparation reports failure, not offline readiness",
+      "passed": true
+    },
+    {
+      "name": "Retry reuses already downloaded songs",
+      "passed": true
+    },
+    {
+      "name": "Subdirectory scope is correct and cache names are scope-isolated",
+      "passed": true
+    },
+    {
+      "name": "All 20 MP3 files have complete 200 responses",
+      "passed": true
+    },
+    {
+      "name": "Cache contains no originals or QA artifacts",
+      "passed": true
+    },
+    {
+      "name": "Browser parses manifest without errors",
+      "passed": true
+    },
+    {
+      "name": "Browser reports zero PWA installability errors",
+      "passed": true
+    },
+    {
+      "name": "Manifest includes 192/512 icons and separate maskable icon",
+      "passed": true
+    },
+    {
+      "name": "Offline navigation with query/hash loads all ten songs",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/01-night-birds.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/instrumental/01-night-birds.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/02-crosses.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/instrumental/02-crosses.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/03-if-i-were-you-i-really-wouldn-t-do-that.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/instrumental/03-if-i-were-you-i-really-wouldn-t-do-that.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/04-hooked-on-a-feeling.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/instrumental/04-hooked-on-a-feeling.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/05-tied-to-the-tracks.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/instrumental/05-tied-to-the-tracks.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/06-lullaby.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/instrumental/06-lullaby.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/07-diamonds-and-daggers.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/instrumental/07-diamonds-and-daggers.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/08-little-secret.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/instrumental/08-little-secret.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/09-metal-song.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/instrumental/09-metal-song.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/10-mercenary.mp3",
+      "passed": true
+    },
+    {
+      "name": "Offline byte range integrity: assets/audio/instrumental/10-mercenary.mp3",
+      "passed": true
+    },
+    {
+      "name": "Open and suffix ranges are served accurately",
+      "passed": true
+    },
+    {
+      "name": "Unsatisfiable, reversed and empty suffix ranges return 416",
+      "passed": true
+    },
+    {
+      "name": "Unsupported multipart range safely returns full 200",
+      "passed": true
+    },
+    {
+      "name": "Existing verify-real.js regression suite passes offline",
+      "passed": true
+    },
+    {
+      "name": "One native audio and no audiovisual embeds",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Default fifth track is paused and defers MP3 loading",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Metadata remains clearly unverified",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "P!ATDXLILY is the document and accessible brand",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Demo placeholders are absent from page copy",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Dedication describes the recovered collection",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Journey label describes the song route, not a video",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 1: paused selection defers audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 1: title/album/artist/year",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 1: correct source and cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 1: actual finite duration",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 1: complete square cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 1: native playback advances",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 1: pause freezes native clock",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 2: paused selection defers audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 2: title/album/artist/year",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 2: correct source and cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 2: actual finite duration",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 2: complete square cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 2: native playback advances",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 2: pause freezes native clock",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 3: paused selection defers audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 3: title/album/artist/year",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 3: correct source and cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 3: actual finite duration",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 3: complete square cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 3: native playback advances",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 3: pause freezes native clock",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 4: paused selection defers audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 4: title/album/artist/year",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 4: correct source and cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 4: actual finite duration",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 4: complete square cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 4: native playback advances",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 4: pause freezes native clock",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 5: paused selection defers audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 5: title/album/artist/year",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 5: correct source and cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 5: actual finite duration",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 5: complete square cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 5: native playback advances",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 5: pause freezes native clock",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 6: paused selection defers audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 6: title/album/artist/year",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 6: correct source and cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 6: actual finite duration",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 6: complete square cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 6: native playback advances",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 6: pause freezes native clock",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 7: paused selection defers audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 7: title/album/artist/year",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 7: correct source and cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 7: actual finite duration",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 7: complete square cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 7: native playback advances",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 7: pause freezes native clock",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 8: paused selection defers audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 8: title/album/artist/year",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 8: correct source and cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 8: actual finite duration",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 8: complete square cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 8: native playback advances",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 8: pause freezes native clock",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 9: paused selection defers audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 9: title/album/artist/year",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 9: correct source and cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 9: actual finite duration",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 9: complete square cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 9: native playback advances",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 9: pause freezes native clock",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 10: paused selection defers audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 10: title/album/artist/year",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 10: correct source and cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 10: actual finite duration",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 10: complete square cover",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 10: native playback advances",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Track 10: pause freezes native clock",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Seek uses real media time and accessible value",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Next while paused resets without autoplay",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Previous preserves paused state",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Selection while playing continues on new audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Rapid switches keep only final source and state",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Rapid play then pause remains paused",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Native ended advances and keeps playing",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Final ended stops rather than loops",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Play after end restarts real track",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Manual next wraps last to first",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Manual previous wraps first to last",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Autoplay rejection is handled honestly",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Retry recovers actual playback",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Navigation inicio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Navigation informacion",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Navigation musica",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Navigation karaoke",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Navigation videos",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Navigation novedades",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Journey dialog describes the treasured songs",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Collection help explains the local archive and burger invitation",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Music no longer claims simulated audio",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "No horizontal overflow",
+      "passed": true,
+      "suite": "verify-real.js"
+    },
+    {
+      "name": "Existing verify-karaoke.js regression suite passes offline",
+      "passed": true
+    },
+    {
+      "name": "Karaoke route, lyrics and deferred audio without autoplay",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "One shared native audio",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Artwork is confined to Karaoke",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Ten sets of timed lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "1: chronological lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "2: chronological lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "3: chronological lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "4: chronological lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "5: chronological lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "6: chronological lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "7: chronological lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "8: chronological lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "9: chronological lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "10: chronological lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Uncertain source wording remains marked",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "1: its local artwork fills only the lyrics box",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "1: selector loads its own lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "1: instrumental is the actual source",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "1: original restored",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "2: its local artwork fills only the lyrics box",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "2: selector loads its own lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "2: instrumental is the actual source",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "2: original restored",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "3: its local artwork fills only the lyrics box",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "3: selector loads its own lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "3: instrumental is the actual source",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "3: original restored",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "4: its local artwork fills only the lyrics box",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "4: selector loads its own lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "4: instrumental is the actual source",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "4: original restored",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "5: its local artwork fills only the lyrics box",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "5: selector loads its own lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "5: instrumental is the actual source",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "5: original restored",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "6: its local artwork fills only the lyrics box",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "6: selector loads its own lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "6: instrumental is the actual source",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "6: original restored",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "7: its local artwork fills only the lyrics box",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "7: selector loads its own lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "7: instrumental is the actual source",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "7: original restored",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "8: its local artwork fills only the lyrics box",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "8: selector loads its own lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "8: instrumental is the actual source",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "8: original restored",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "9: its local artwork fills only the lyrics box",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "9: selector loads its own lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "9: instrumental is the actual source",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "9: original restored",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "10: its local artwork fills only the lyrics box",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "10: selector loads its own lyrics",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "10: instrumental is the actual source",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "10: original restored",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Seeking highlights the corresponding line",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Paused switch preserves playhead",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Rapid mode changes preserve the final source and time",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Artwork disappears outside Karaoke",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Leaving karaoke restores original without losing playback",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Missing instrumental never falls back to voiced audio",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Exit recovers original after instrumental failure",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Song selector retains instrumental mode",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Ending advances to the next instrumental",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Last track stops instead of wrapping",
+      "passed": true,
+      "suite": "verify-karaoke.js"
+    },
+    {
+      "name": "Instrumental 1: native decode, playback and seek offline",
+      "passed": true
+    },
+    {
+      "name": "Instrumental 2: native decode, playback and seek offline",
+      "passed": true
+    },
+    {
+      "name": "Instrumental 3: native decode, playback and seek offline",
+      "passed": true
+    },
+    {
+      "name": "Instrumental 4: native decode, playback and seek offline",
+      "passed": true
+    },
+    {
+      "name": "Instrumental 5: native decode, playback and seek offline",
+      "passed": true
+    },
+    {
+      "name": "Instrumental 6: native decode, playback and seek offline",
+      "passed": true
+    },
+    {
+      "name": "Instrumental 7: native decode, playback and seek offline",
+      "passed": true
+    },
+    {
+      "name": "Instrumental 8: native decode, playback and seek offline",
+      "passed": true
+    },
+    {
+      "name": "Instrumental 9: native decode, playback and seek offline",
+      "passed": true
+    },
+    {
+      "name": "Instrumental 10: native decode, playback and seek offline",
+      "passed": true
+    },
+    {
+      "name": "PWA controls do not overflow at 320px",
+      "passed": true
+    },
+    {
+      "name": "PWA controls do not overflow at 390px",
+      "passed": true
+    },
+    {
+      "name": "PWA controls do not overflow at 768px",
+      "passed": true
+    },
+    {
+      "name": "PWA controls do not overflow at 1440px",
+      "passed": true
+    },
+    {
+      "name": "Cache eviction is not reported as fully offline-ready",
+      "passed": true
+    },
+    {
+      "name": "Reconnect repairs just the missing song",
+      "passed": true
+    },
+    {
+      "name": "New service worker waits without interrupting playback",
+      "passed": true
+    },
+    {
+      "name": "Accepted update activates v2 and removes only old owned shell",
+      "passed": true
+    },
+    {
+      "name": "UI update reuses unchanged media cache",
+      "passed": true
+    },
+    {
+      "name": "Reopened page works with actual server stopped",
+      "passed": true
+    },
+    {
+      "name": "Audio still plays with actual server stopped",
+      "passed": true
+    },
+    {
+      "name": "file:// remains usable without trying PWA registration",
+      "passed": true
+    },
+    {
+      "name": "No unexpected application JavaScript errors",
+      "passed": true
+    }
+  ]
+}

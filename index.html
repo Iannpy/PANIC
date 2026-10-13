@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#a2402c">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="P!ATDXLILY">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <meta name="description" content="P!ATDXLILY reúne diez canciones de Panic! at the Disco en un archivo local para que Lily pueda volver a escucharlas. Fan page independiente y no oficial.">
   <title>P!ATDXLILY — Diez canciones para Lily</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -12,6 +17,7 @@
   <script src="tracks-data.js" defer></script>
   <script src="lyrics-data.js" defer></script>
   <script src="app.js" defer></script>
+  <script src="pwa.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main-content">Saltar al contenido</a>
@@ -114,6 +120,14 @@
     </div>
   </main>
   <footer class="page-bottom"><span>DIEZ CANCIONES REUNIDAS.</span><span>FAN PAGE INDEPENDIENTE · NO OFICIAL</span></footer>
+  <section class="pwa-bar" aria-label="Disponibilidad sin conexión e instalación">
+    <p id="offline-status" role="status" aria-live="polite">Preparando el uso sin conexión…</p>
+    <div class="pwa-actions">
+      <button id="offline-retry" type="button" hidden>Reintentar descarga</button>
+      <button id="pwa-update" type="button" hidden>Actualizar página</button>
+      <button id="pwa-install" type="button" hidden>Instalar P!ATDXLILY</button>
+    </div>
+  </section>
   <audio id="audio-player" preload="none"></audio>
   <p class="sr-only" id="status" role="status" aria-live="polite"></p>
   <dialog id="demo-dialog" aria-labelledby="dialog-title"><button class="dialog-close" id="dialog-close" aria-label="Cerrar información">×</button><p class="small-label">P!ATDXLILY / ARCHIVO PERSONAL</p><h2 id="dialog-title">Un archivo para volver.</h2><p id="dialog-copy">Reuní las diez canciones en este archivo local para que puedas escucharlas juntas. Los títulos, años, álbumes y portadas son datos preparados; no es una discografía verificada ni un sitio oficial. Y si quieres los demás álbumes, invítame una hamburguesa :P</p><button class="dialog-confirm" id="dialog-confirm">Entendido</button></dialog>

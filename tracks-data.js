@@ -1,5 +1,5 @@
 // Prepared local metadata, not independently verified discography.
-window.PANIC_TRACKS = Object.freeze([
+globalThis.PANIC_TRACKS = Object.freeze([
   {
     "id": 1,
     "title": "Night Birds",

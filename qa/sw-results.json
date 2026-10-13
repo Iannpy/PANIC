@@ -1,0 +1,53 @@
+{
+  "passed": 12,
+  "checks": [
+    {
+      "name": "Shell installation does not force updates to activate",
+      "passed": true
+    },
+    {
+      "name": "Storage quota error is explicitly reported",
+      "passed": true
+    },
+    {
+      "name": "Partial downloads are not reported as ready",
+      "passed": true
+    },
+    {
+      "name": "Retry after quota failure completes every required resource",
+      "passed": true
+    },
+    {
+      "name": "Query/hash navigation resolves cached document without network",
+      "passed": true
+    },
+    {
+      "name": "Cached range body is byte-exact",
+      "passed": true
+    },
+    {
+      "name": "External requests are left untouched",
+      "passed": true
+    },
+    {
+      "name": "QA files are never intercepted",
+      "passed": true
+    },
+    {
+      "name": "Original source media is never intercepted",
+      "passed": true
+    },
+    {
+      "name": "POST requests are never intercepted",
+      "passed": true
+    },
+    {
+      "name": "Activation only clears outdated caches in its own scope",
+      "passed": true
+    },
+    {
+      "name": "Explicit update message can activate the waiting worker",
+      "passed": true
+    }
+  ]
+}
