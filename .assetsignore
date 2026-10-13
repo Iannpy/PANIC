@@ -1,0 +1,39 @@
+# Filtro de subida de Cloudflare Workers Static Assets (sintaxis gitignore).
+# El sitio es estático y sin build: el directorio de assets es la raíz del repo,
+# así que aquí se excluye todo lo que NO debe servirse públicamente.
+
+# Control de versiones, editor y herramientas
+.git/
+.gitignore
+.assetsignore
+.playwright-mcp/
+
+# Configuración de despliegue
+wrangler.jsonc
+
+# Documentación, scripts auxiliares y artefactos
+README.md
+_full.py
+lovable-project-19f0d9c8.zip
+
+# Carpetas de trabajo: QA, scripts y fuentes de texto/imagen.
+# El runtime usa assets/optimized/*.webp y assets/covers/*.webp.
+qa/
+scripts/
+letras/
+portadas/
+assets/karaoke-concepts/
+pistas/
+
+# OJO: assets/audio/ NO se ignora a propósito. Son los MP3 que el sitio sirve,
+# pero están en .gitignore por derechos de autor, así que el despliegue no los
+# incluye hasta que se decida cómo distribuirlos.
+
+# Fuentes de imagen sin optimizar (el sitio sirve la versión WebP)
+assets/canyon.png
+assets/canyon(1).png
+assets/silk.png
+assets/image-prompts.txt
+
+# Intermedios de preparación (lyrics-data.js ya los incorpora)
+lyrics-timings.json
