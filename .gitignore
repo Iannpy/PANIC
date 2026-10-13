@@ -1,2 +1,6 @@
 /assets/audio/
 /pistas/
+
+# Artefactos de QA / export de Lovable
+/.playwright-mcp/
+/lovable-project-19f0d9c8.zip
