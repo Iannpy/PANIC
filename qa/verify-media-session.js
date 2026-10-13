@@ -63,7 +63,7 @@
   $('[data-view="karaoke"]').click();
   await until(() => !$('#view-karaoke').hidden, 'karaoke');
   $('#karaoke-toggle').click();
-  await until(() => audio.currentSrc.includes('/instrumental/') && audio.readyState >= 1, 'instrumental');
+  await until(() => audio.currentSrc.includes('/instrumental/') && audio.readyState >= 1 && at(7), 'instrumental seek completed');
   check('Instrumental mode appears in platform album metadata', navigator.mediaSession.metadata.album.endsWith(' · Solo instrumental'));
   check('Changing mode preserves the song background and position', imageIs(tracks[5]) && at(7));
   action('play');

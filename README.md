@@ -65,7 +65,7 @@ En navegadores con **Media Session API**, la tarjeta multimedia recibe el títul
 
 Se reutilizan las diez imágenes WebP existentes, ya disponibles en la caché offline; no se crean fondos nuevos ni se modifican las portadas del sitio. Son panorámicas y el sistema puede recortarlas. **Android y el navegador deciden el aspecto de la tarjeta, los botones visibles y si la imagen aparece como miniatura o fondo**: una web no puede imponer el fondo completo de la pantalla de bloqueo. Si falta la API o una acción no está soportada, el sitio sigue funcionando normalmente. `SHELL_VERSION` sube a **v3** para recibir esta función; la caché de audios sigue en **v1**.
 
-La implementación se validó localmente; aún no se publicó esta función ni se comprobó su apariencia en el Android físico de la captura. Referencia: [Media Session en Chrome](https://developer.chrome.com/blog/media-session).
+La función se publicó en el commit `b79b589` (shell v3) y sus 54 pruebas multimedia también pasaron contra la URL real con la red offline. No se comprobó su apariencia en el Android físico de la captura ni en un iPhone. Referencia: [Media Session en Chrome](https://developer.chrome.com/blog/media-session).
 
 ## Karaoke: preparación y uso
 

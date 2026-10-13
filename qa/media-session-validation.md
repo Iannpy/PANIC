@@ -28,7 +28,9 @@ Resultados: `media-session-results.json` (54) y `pwa-results.json` (285). Reprod
 
 ## Alcance y límites
 
-**Preparado localmente; no hubo commit, push ni despliegue de esta función nueva.** Se requiere recibir la actualización v3 para que la PWA publicada envíe estos datos.
+**Publicado en `b79b589`, con shell v3 y despliegue Cloudflare completado.** Las instalaciones anteriores necesitan recibir esa actualización para enviar estos datos.
+
+Se repitieron las **54 pruebas** contra `https://panic.iannpoolperez.workers.dev/` usando un navegador de QA independiente, APIs nativas instrumentadas y red offline: todas aprobadas. Se verificó la metadata final de Crosses y su imagen `02-crosses.webp`. El primer intento detectó una espera incompleta del test al cambiar a instrumental: `loadedmetadata` puede llegar antes de que finalice el seek. Se ajustó la espera a fuente correcta, metadata y posición sin seek en curso; el reproductor no necesitó cambios. Cada ejecución usa un documento fresco, no una navegación sólo de hash que conserve estado anterior.
 
 La API ofrece metadata y acciones; Android/navegador decide qué botones muestra y cómo presenta o recorta la imagen. No permite diseñar toda la tarjeta ni imponer el fondo completo de la pantalla de bloqueo. No se controló ni verificó la tarjeta del Android físico de la captura: la evidencia corresponde a metadata/API/handlers y audio nativo en Chrome de escritorio.
 
