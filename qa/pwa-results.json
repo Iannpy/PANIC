@@ -1,6 +1,6 @@
 {
-  "passed": 226,
-  "date": "2026-10-13T15:45:54.498Z",
+  "passed": 285,
+  "date": "2026-10-13T16:01:12.007Z",
   "bytesCached": 97894194,
   "installability": [],
   "checks": [
@@ -982,6 +982,280 @@
       "suite": "verify-karaoke.js"
     },
     {
+      "name": "Existing verify-media-session.js regression suite passes offline",
+      "passed": true
+    },
+    {
+      "name": "Media Session registers eight system actions",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Default title and artist use the song, not document title",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Default artwork is its song background, not the app icon",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Media Session initialization does not autoplay",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "System play starts native audio and updates UI",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "System pause synchronizes native audio, UI and platform state",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Absolute system seek stays paused",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "System seek backward defaults to ten seconds",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "System seek forward honors supplied offset",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Position state includes valid native duration/rate/position",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Playback-rate changes reach the platform",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Invalid system seek is ignored safely",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "System next changes metadata/artwork and preserves playback",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "System previous uses existing playlist navigation",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Paused system next does not autoplay or load the audio element",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Lazy system seeks reuse metadata queue and keep the final request",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Instrumental mode appears in platform album metadata",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Changing mode preserves the song background and position",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "System playlist controls retain instrumental mode",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "System stop pauses and resets without selecting another song",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 1: exact title/artist metadata",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 1: its background URL and honest MIME/dimensions",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 1: background decodes offline",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 2: exact title/artist metadata",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 2: its background URL and honest MIME/dimensions",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 2: background decodes offline",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 3: exact title/artist metadata",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 3: its background URL and honest MIME/dimensions",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 3: background decodes offline",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 4: exact title/artist metadata",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 4: its background URL and honest MIME/dimensions",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 4: background decodes offline",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 5: exact title/artist metadata",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 5: its background URL and honest MIME/dimensions",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 5: background decodes offline",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 6: exact title/artist metadata",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 6: its background URL and honest MIME/dimensions",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 6: background decodes offline",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 7: exact title/artist metadata",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 7: its background URL and honest MIME/dimensions",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 7: background decodes offline",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 8: exact title/artist metadata",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 8: its background URL and honest MIME/dimensions",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 8: background decodes offline",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 9: exact title/artist metadata",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 9: its background URL and honest MIME/dimensions",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 9: background decodes offline",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 10: exact title/artist metadata",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 10: its background URL and honest MIME/dimensions",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Song 10: background decodes offline",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Native automatic advance refreshes system metadata/artwork",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Blocked system play reports paused state rather than fake playback",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "System play recovers from a blocked playback request",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
+      "name": "Integration still uses only one native audio element",
+      "passed": true,
+      "suite": "verify-media-session.js"
+    },
+    {
       "name": "Instrumental 1: native decode, playback and seek offline",
       "passed": true
     },
@@ -1067,6 +1341,22 @@
     },
     {
       "name": "file:// remains usable without trying PWA registration",
+      "passed": true
+    },
+    {
+      "name": "Media Session absent: normal site still initializes",
+      "passed": true
+    },
+    {
+      "name": "Media Session absent: native playback still works",
+      "passed": true
+    },
+    {
+      "name": "Media Session partial: normal site still initializes",
+      "passed": true
+    },
+    {
+      "name": "Media Session partial: native playback still works",
       "passed": true
     },
     {

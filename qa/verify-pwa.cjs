@@ -45,6 +45,15 @@ async function main() {
   const profile = fs.mkdtempSync(path.join(tempRoot, 'panic-pwa-qa-'));
   // Installability cannot be tested in Playwright's incognito newContext().
   const context = await chromium.launchPersistentContext(profile, { channel: 'chrome', headless: true, viewport: { width: 1440, height: 1000 } });
+  await context.addInitScript(() => {
+    const session = navigator.mediaSession;
+    if (!session) return;
+    const probe = window.__panicMediaProbe = { handlers: {}, position: null };
+    const nativeHandler = session.setActionHandler.bind(session);
+    session.setActionHandler = (action, handler) => { probe.handlers[action] = handler; return nativeHandler(action, handler); };
+    const nativePosition = session.setPositionState.bind(session);
+    session.setPositionState = state => { probe.position = state ? { ...state } : null; return nativePosition(state); };
+  });
   const page = await context.newPage();
   const pageErrors = [];
   page.on('pageerror', error => pageErrors.push(error.message));
@@ -128,7 +137,7 @@ async function main() {
     check('Unsatisfiable, reversed and empty suffix ranges return 416', edgeRanges.slice(2, 5).every(result => result.status === 416));
     check('Unsupported multipart range safely returns full 200', edgeRanges[5].status === 200 && edgeRanges[5].length === firstSize);
 
-    for (const [script, resultName] of [['verify-real.js', '__panicRealQA'], ['verify-karaoke.js', '__panicKaraokeQA']]) {
+    for (const [script, resultName] of [['verify-real.js', '__panicRealQA'], ['verify-karaoke.js', '__panicKaraokeQA'], ['verify-media-session.js', '__panicMediaQA']]) {
       // A unique query forces a fresh document; hash-only goto preserves player state.
       await page.goto(`${base}?suite=${script}#musica`);
       await page.evaluate(fs.readFileSync(path.join(__dirname, script), 'utf8'));
@@ -136,6 +145,7 @@ async function main() {
       console.log(script, JSON.stringify({ passed: result?.passed, error: result?.error }));
       check(`Existing ${script} regression suite passes offline`, result && !result.error && result.passed > 0);
       checks.push(...result.checks.map(item => ({ ...item, suite: script })));
+      if (script === 'verify-media-session.js') fs.writeFileSync(path.join(__dirname, 'media-session-results.json'), JSON.stringify(result, null, 2) + '\n');
     }
 
     // Decode and advance every instrumental, not only its cached bytes/metadata.
@@ -205,6 +215,31 @@ async function main() {
     await filePage.goto(pathToFileURL(path.join(root, 'index.html')).href);
     await filePage.getByText('Para guardar sin conexión e instalar, abre la página por HTTPS o localhost; no como archivo.', { exact: true }).waitFor();
     check('file:// remains usable without trying PWA registration', await filePage.locator('.track').count() === 10 && await filePage.locator('#pwa-install').isHidden());
+    for (const mode of ['absent', 'partial']) {
+      const fallbackContext = await context.browser().newContext();
+      try {
+        await fallbackContext.addInitScript(mode => {
+          const handlers = window.__partialMediaHandlers = {};
+          const session = mode === 'absent' ? undefined : {
+            setActionHandler(action, handler) { if (action === 'seekbackward') throw new DOMException('QA unsupported', 'NotSupportedError'); handlers[action] = handler; },
+            setPositionState() { throw new DOMException('QA unsupported', 'NotSupportedError'); },
+            set metadata(value) { throw new DOMException('QA unsupported', 'NotSupportedError'); },
+            set playbackState(value) { throw new DOMException('QA unsupported', 'NotSupportedError'); }
+          };
+          Object.defineProperty(navigator, 'mediaSession', { value: session });
+        }, mode);
+        const fallbackPage = await fallbackContext.newPage();
+        const errors = [];
+        fallbackPage.on('pageerror', error => errors.push(error.message));
+        await fallbackPage.goto(pathToFileURL(path.join(root, 'index.html')).href);
+        check(`Media Session ${mode}: normal site still initializes`, await fallbackPage.locator('.track').count() === 10 && errors.length === 0);
+        await fallbackPage.evaluate(() => { document.querySelector('#audio-player').muted = true; });
+        if (mode === 'partial') await fallbackPage.evaluate(() => window.__partialMediaHandlers.play());
+        else await fallbackPage.locator('#play-toggle').click();
+        await fallbackPage.waitForFunction(() => document.querySelector('#audio-player').currentTime > .1);
+        check(`Media Session ${mode}: native playback still works`, errors.length === 0);
+      } finally { await fallbackContext.close(); }
+    }
     check('No unexpected application JavaScript errors', pageErrors.length === 0);
     const report = { passed: checks.length, date: new Date().toISOString(), bytesCached: stored.media.reduce((sum, item) => sum + item.bytes, 0), installability: installability.installabilityErrors, checks };
     fs.writeFileSync(path.join(__dirname, 'pwa-results.json'), JSON.stringify(report, null, 2) + '\n');

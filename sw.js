@@ -2,7 +2,7 @@
 'use strict';
 importScripts('./tracks-data.js');
 
-const SHELL_VERSION = 'v2';
+const SHELL_VERSION = 'v3';
 const MEDIA_VERSION = 'v1';
 const PREFIX = `piatdxlily-${encodeURIComponent(new URL(self.registration.scope).pathname)}-`;
 const SHELL_CACHE = `${PREFIX}shell-${SHELL_VERSION}`;

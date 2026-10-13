@@ -18,6 +18,8 @@
   const followButton = $('lyrics-follow');
   const mainPanel = document.querySelector('.main-panel');
   let renderedLyrics = [];
+  const mediaSession = navigator.mediaSession;
+  let mediaMetadataKey = '';
   const formatTime = (seconds) => {
     const safe = Number.isFinite(seconds) ? Math.max(0, Math.floor(seconds)) : 0;
     return `${Math.floor(safe / 60)}:${String(safe % 60).padStart(2, '0')}`;
@@ -27,6 +29,60 @@
   const currentSource = () => state.karaoke ? currentTrack().instrumentalSrc : currentTrack().src;
   const currentSourceMatches = () => audio.currentSrc === new URL(currentSource(), document.baseURI).href;
   const currentSourceAssigned = () => audio.src === new URL(currentSource(), document.baseURI).href;
+
+  function syncMediaSession() {
+    if (!mediaSession) return;
+    const track = currentTrack();
+    const key = `${track.id}:${state.karaoke}`;
+    if (key !== mediaMetadataKey && typeof window.MediaMetadata === 'function') {
+      try {
+        mediaSession.metadata = new MediaMetadata({
+          title: track.title,
+          artist: track.artist,
+          album: state.karaoke ? `${track.album} · Solo instrumental` : track.album,
+          // These are the existing per-song backgrounds, not the app icon.
+          // Do not claim square sizes: the originals are panoramic WebP images.
+          artwork: [{ src: new URL(track.karaokeImage || track.cover, document.baseURI).href, type: 'image/webp' }]
+        });
+        mediaMetadataKey = key;
+      } catch { /* Optional OS integration must not break the native player. */ }
+    }
+    try {
+      // Keep pause controls available while a requested track is buffering.
+      mediaSession.playbackState = state.wantPlaying && !state.error ? 'playing' : 'paused';
+    } catch { /* Some browsers expose only part of Media Session. */ }
+  }
+
+  function syncMediaPosition(duration, position) {
+    if (!mediaSession?.setPositionState) return;
+    try {
+      if (!Number.isFinite(duration) || duration <= 0) mediaSession.setPositionState();
+      else mediaSession.setPositionState({
+        duration,
+        position: Math.max(0, Math.min(position, duration)),
+        playbackRate: audio.playbackRate > 0 ? audio.playbackRate : 1
+      });
+    } catch { /* Invalid/unsupported position reporting must not stop audio. */ }
+  }
+
+  function setupMediaControls() {
+    if (!mediaSession?.setActionHandler) return;
+    const position = () => state.pendingSeek?.time ?? (currentSourceMatches() ? audio.currentTime || 0 : 0);
+    const actions = {
+      play: () => requestPlayback(),
+      pause: () => pausePlayback(),
+      previoustrack: () => selectTrack(state.selected - 1),
+      nexttrack: () => selectTrack(state.selected + 1),
+      seekto: details => seekTo(details.seekTime),
+      seekbackward: details => seekTo(position() - (details.seekOffset ?? 10)),
+      seekforward: details => seekTo(position() + (details.seekOffset ?? 10)),
+      stop: () => { pausePlayback(); seekTo(0); }
+    };
+    Object.entries(actions).forEach(([action, handler]) => {
+      try { mediaSession.setActionHandler(action, handler); }
+      catch { /* Register other controls even if one action is unsupported. */ }
+    });
+  }
 
   tracks.forEach((track, index) => {
     const item = document.createElement('li');
@@ -116,6 +172,7 @@
     $('duration').textContent = formatTime(duration);
     buttons[state.selected].querySelector('.track-progress').style.width = percent;
     renderLyricsProgress();
+    syncMediaPosition(duration, elapsed);
   }
 
   function renderPlayer() {
@@ -138,6 +195,7 @@
     $('player-error').hidden = !state.error;
     $('player-error').textContent = state.error;
     renderKaraokeMode();
+    syncMediaSession();
     renderProgress();
   }
 
@@ -253,6 +311,7 @@
   audio.addEventListener('loadedmetadata', updateMetadata);
   audio.addEventListener('durationchange', updateMetadata);
   audio.addEventListener('timeupdate', renderProgress);
+  audio.addEventListener('ratechange', renderProgress);
   audio.addEventListener('seeked', () => {
     state.followLyrics = true;
     followButton.hidden = true;
@@ -300,12 +359,12 @@
   play.addEventListener('click', togglePlayback);
   $('previous').addEventListener('click', () => selectTrack(state.selected - 1));
   $('next').addEventListener('click', () => selectTrack(state.selected + 1));
-  seek.addEventListener('input', () => {
+  function seekTo(time) {
     // currentSrc can still refer to the previous track until the browser's next
     // media-selection step. The configured src is already authoritative here.
-    if (!currentSourceAssigned() || state.error) return;
+    if (!currentSourceAssigned() || state.error || !Number.isFinite(time)) return;
     const duration = state.metadataReady && Number.isFinite(audio.duration) ? audio.duration : currentTrack().duration;
-    const target = Math.max(0, Math.min(Number(seek.value), duration));
+    const target = Math.max(0, Math.min(time, duration));
     if (!state.metadataReady) {
       if (state.pendingSeek) state.pendingSeek.time = target;
       else {
@@ -319,7 +378,8 @@
     }
     audio.currentTime = target;
     renderProgress();
-  });
+  }
+  seek.addEventListener('input', () => seekTo(Number(seek.value)));
 
   function setKaraoke(enabled) {
     if (enabled === state.karaoke) return;
@@ -401,6 +461,7 @@
     if (event.target === dialog && (event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom)) dialog.close();
   });
   window.addEventListener('pagehide', pausePlayback);
+  setupMediaControls();
   selectTrack(4, false);
   showView();
 })();

@@ -1,0 +1,221 @@
+{
+  "passed": 54,
+  "checks": [
+    {
+      "name": "Media Session registers eight system actions",
+      "passed": true
+    },
+    {
+      "name": "Default title and artist use the song, not document title",
+      "passed": true
+    },
+    {
+      "name": "Default artwork is its song background, not the app icon",
+      "passed": true
+    },
+    {
+      "name": "Media Session initialization does not autoplay",
+      "passed": true
+    },
+    {
+      "name": "System play starts native audio and updates UI",
+      "passed": true
+    },
+    {
+      "name": "System pause synchronizes native audio, UI and platform state",
+      "passed": true
+    },
+    {
+      "name": "Absolute system seek stays paused",
+      "passed": true
+    },
+    {
+      "name": "System seek backward defaults to ten seconds",
+      "passed": true
+    },
+    {
+      "name": "System seek forward honors supplied offset",
+      "passed": true
+    },
+    {
+      "name": "Position state includes valid native duration/rate/position",
+      "passed": true
+    },
+    {
+      "name": "Playback-rate changes reach the platform",
+      "passed": true
+    },
+    {
+      "name": "Invalid system seek is ignored safely",
+      "passed": true
+    },
+    {
+      "name": "System next changes metadata/artwork and preserves playback",
+      "passed": true
+    },
+    {
+      "name": "System previous uses existing playlist navigation",
+      "passed": true
+    },
+    {
+      "name": "Paused system next does not autoplay or load the audio element",
+      "passed": true
+    },
+    {
+      "name": "Lazy system seeks reuse metadata queue and keep the final request",
+      "passed": true
+    },
+    {
+      "name": "Instrumental mode appears in platform album metadata",
+      "passed": true
+    },
+    {
+      "name": "Changing mode preserves the song background and position",
+      "passed": true
+    },
+    {
+      "name": "System playlist controls retain instrumental mode",
+      "passed": true
+    },
+    {
+      "name": "System stop pauses and resets without selecting another song",
+      "passed": true
+    },
+    {
+      "name": "Song 1: exact title/artist metadata",
+      "passed": true
+    },
+    {
+      "name": "Song 1: its background URL and honest MIME/dimensions",
+      "passed": true
+    },
+    {
+      "name": "Song 1: background decodes offline",
+      "passed": true
+    },
+    {
+      "name": "Song 2: exact title/artist metadata",
+      "passed": true
+    },
+    {
+      "name": "Song 2: its background URL and honest MIME/dimensions",
+      "passed": true
+    },
+    {
+      "name": "Song 2: background decodes offline",
+      "passed": true
+    },
+    {
+      "name": "Song 3: exact title/artist metadata",
+      "passed": true
+    },
+    {
+      "name": "Song 3: its background URL and honest MIME/dimensions",
+      "passed": true
+    },
+    {
+      "name": "Song 3: background decodes offline",
+      "passed": true
+    },
+    {
+      "name": "Song 4: exact title/artist metadata",
+      "passed": true
+    },
+    {
+      "name": "Song 4: its background URL and honest MIME/dimensions",
+      "passed": true
+    },
+    {
+      "name": "Song 4: background decodes offline",
+      "passed": true
+    },
+    {
+      "name": "Song 5: exact title/artist metadata",
+      "passed": true
+    },
+    {
+      "name": "Song 5: its background URL and honest MIME/dimensions",
+      "passed": true
+    },
+    {
+      "name": "Song 5: background decodes offline",
+      "passed": true
+    },
+    {
+      "name": "Song 6: exact title/artist metadata",
+      "passed": true
+    },
+    {
+      "name": "Song 6: its background URL and honest MIME/dimensions",
+      "passed": true
+    },
+    {
+      "name": "Song 6: background decodes offline",
+      "passed": true
+    },
+    {
+      "name": "Song 7: exact title/artist metadata",
+      "passed": true
+    },
+    {
+      "name": "Song 7: its background URL and honest MIME/dimensions",
+      "passed": true
+    },
+    {
+      "name": "Song 7: background decodes offline",
+      "passed": true
+    },
+    {
+      "name": "Song 8: exact title/artist metadata",
+      "passed": true
+    },
+    {
+      "name": "Song 8: its background URL and honest MIME/dimensions",
+      "passed": true
+    },
+    {
+      "name": "Song 8: background decodes offline",
+      "passed": true
+    },
+    {
+      "name": "Song 9: exact title/artist metadata",
+      "passed": true
+    },
+    {
+      "name": "Song 9: its background URL and honest MIME/dimensions",
+      "passed": true
+    },
+    {
+      "name": "Song 9: background decodes offline",
+      "passed": true
+    },
+    {
+      "name": "Song 10: exact title/artist metadata",
+      "passed": true
+    },
+    {
+      "name": "Song 10: its background URL and honest MIME/dimensions",
+      "passed": true
+    },
+    {
+      "name": "Song 10: background decodes offline",
+      "passed": true
+    },
+    {
+      "name": "Native automatic advance refreshes system metadata/artwork",
+      "passed": true
+    },
+    {
+      "name": "Blocked system play reports paused state rather than fake playback",
+      "passed": true
+    },
+    {
+      "name": "System play recovers from a blocked playback request",
+      "passed": true
+    },
+    {
+      "name": "Integration still uses only one native audio element",
+      "passed": true
+    }
+  ]
+}
