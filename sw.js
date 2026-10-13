@@ -2,7 +2,7 @@
 'use strict';
 importScripts('./tracks-data.js');
 
-const SHELL_VERSION = 'v1';
+const SHELL_VERSION = 'v2';
 const MEDIA_VERSION = 'v1';
 const PREFIX = `piatdxlily-${encodeURIComponent(new URL(self.registration.scope).pathname)}-`;
 const SHELL_CACHE = `${PREFIX}shell-${SHELL_VERSION}`;
@@ -113,6 +113,18 @@ async function rangeResponse(request, response) {
   return new Response(blob.slice(start, end + 1), { status: 206, statusText: 'Partial Content', headers });
 }
 
+function navigationResponse(response) {
+  if (!response.redirected) return response;
+  // Cloudflare canonicalizes /index.html to /. A redirected cached response is
+  // invalid for navigation requests with redirect=manual and causes ERR_FAILED.
+  // Rebuild its already-decoded HTML as a non-redirected response, also supporting
+  // legacy caches or hosts where the canonical directory itself redirects.
+  const headers = new Headers(response.headers);
+  headers.delete('Content-Encoding');
+  headers.delete('Content-Length');
+  return new Response(response.body, { status: response.status, statusText: response.statusText, headers });
+}
+
 self.addEventListener('fetch', event => {
   const request = event.request;
   if (request.method !== 'GET') return;
@@ -124,7 +136,8 @@ self.addEventListener('fetch', event => {
   if (request.mode === 'navigate' && (url.href === absolute('./') || url.href === absolute('./index.html'))) {
     event.respondWith((async () => {
       const cache = await caches.open(SHELL_CACHE);
-      return await cache.match(absolute('./index.html')) || fetch(request);
+      const cached = await cache.match(absolute('./')) || await cache.match(absolute('./index.html'));
+      return cached ? navigationResponse(cached) : fetch(request);
     })());
   } else if (SHELL_SET.has(url.href) || MEDIA_SET.has(url.href)) {
     event.respondWith((async () => {

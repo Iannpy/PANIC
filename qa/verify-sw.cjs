@@ -60,6 +60,15 @@ async function main() {
   network = false;
   const navigation = await event('fetch', { request: { method: 'GET', mode: 'navigate', url: 'https://panic.test/nested/index.html?qa=1#karaoke' } });
   check('Query/hash navigation resolves cached document without network', navigation.status === 200);
+  const redirected = new Response('<html>cached</html>', {
+    headers: { 'Content-Type': 'text/html', 'Content-Encoding': 'br', 'Content-Length': '999' }
+  });
+  Object.defineProperty(redirected, 'redirected', { value: true });
+  const normalized = vm.runInContext('navigationResponse', context)(redirected);
+  check('Redirected navigation response is rebuilt as non-redirected HTML',
+    !normalized.redirected && normalized.status === 200 && await normalized.text() === '<html>cached</html>');
+  check('Normalized HTML keeps MIME type, discards obsolete encoded length',
+    normalized.headers.get('Content-Type') === 'text/html' && !normalized.headers.has('Content-Encoding') && !normalized.headers.has('Content-Length'));
   const response = await event('fetch', { request: new Request('https://panic.test/nested/assets/audio/01-night-birds.mp3', { headers: { Range: 'bytes=2-5' } }) });
   check('Cached range body is byte-exact', response.status === 206 && await response.text() === 'mple');
   check('External requests are left untouched', await event('fetch', { request: new Request('https://other.test/file') }) === undefined);

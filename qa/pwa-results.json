@@ -1,6 +1,6 @@
 {
-  "passed": 223,
-  "date": "2026-10-13T15:12:38.105Z",
+  "passed": 226,
+  "date": "2026-10-13T15:45:54.498Z",
   "bytesCached": 97894194,
   "installability": [],
   "checks": [
@@ -38,6 +38,18 @@
     },
     {
       "name": "Manifest includes 192/512 icons and separate maskable icon",
+      "passed": true
+    },
+    {
+      "name": "Regression fixture caches the same redirected index as Cloudflare",
+      "passed": true
+    },
+    {
+      "name": "Online PWA reload accepts canonical cached HTML",
+      "passed": true
+    },
+    {
+      "name": "Redirected cached fallback remains navigable when canonical entry is missing",
       "passed": true
     },
     {
@@ -1038,7 +1050,7 @@
       "passed": true
     },
     {
-      "name": "Accepted update activates v2 and removes only old owned shell",
+      "name": "Accepted update activates next version and removes only old owned shell",
       "passed": true
     },
     {

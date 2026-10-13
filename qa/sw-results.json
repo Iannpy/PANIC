@@ -1,5 +1,5 @@
 {
-  "passed": 12,
+  "passed": 14,
   "checks": [
     {
       "name": "Shell installation does not force updates to activate",
@@ -19,6 +19,14 @@
     },
     {
       "name": "Query/hash navigation resolves cached document without network",
+      "passed": true
+    },
+    {
+      "name": "Redirected navigation response is rebuilt as non-redirected HTML",
+      "passed": true
+    },
+    {
+      "name": "Normalized HTML keeps MIME type, discards obsolete encoded length",
       "passed": true
     },
     {

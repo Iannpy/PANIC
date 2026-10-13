@@ -1,6 +1,16 @@
 # PWA y offline — 2026-10-13
 
-**Resultado: 223/223 comprobaciones de navegador + 12/12 unitarias. Sin build.**
+**Resultado: 226/226 comprobaciones de navegador + 14/14 unitarias. Sin build.**
+
+## Corrección Cloudflare: ERR_FAILED al abrir la PWA
+
+Se reprodujo el error en `https://panic.iannpoolperez.workers.dev/#musica`: `/index.html` responde **307 → /**, y su copia cacheada tiene `Response.redirected === true`. Chrome rechaza esa respuesta redirigida al usarla para una nueva navegación. El `sw.js` publicado coincidía por SHA-256 con el local v1; no era una publicación incompleta ni un fallo del manifest.
+
+La prueba ahora simula la misma redirección: con el código anterior `page.reload()` falla con **ERR_FAILED**. El fix prefiere el documento canónico cacheado y reconstruye el fallback redirigido como respuesta HTML no redirigida. Al reconstruir, elimina `Content-Encoding` y `Content-Length` correspondientes al transporte original. Se prueba tanto la recarga normal como la navegación cuando falta la entrada canónica. `SHELL_VERSION` sube a **v2**; `MEDIA_VERSION` sigue en **v1** para no descargar de nuevo los audios.
+
+**La corrección está local: la versión pública aún no se actualizó en esta validación.** La primera QA local omitió las redirecciones propias del hosting; sus 223 checks no acreditaban este comportamiento en Cloudflare ni en el Android físico de la captura.
+
+## Cobertura
 
 - HTML/CSS/JavaScript siguen estáticos; no se modificó `app.js` ni se generaron nuevos audios.
 - Manifest válido con nombre P!ATDXLILY, scope/start URL relativos, modo standalone, iconos 192/512 y máscara segura. Chrome CDP: cero errores de instalabilidad; navegador normal ofrece el botón de instalación.

@@ -9,7 +9,9 @@ const assert = require('node:assert/strict');
 const root = path.resolve(__dirname, '..');
 const checks = [];
 const check = (name, value) => { assert.ok(value, name); checks.push({ name, passed: true }); };
-let version = 'v1';
+const initialVersion = /SHELL_VERSION = '([^']+)'/.exec(fs.readFileSync(path.join(root, 'sw.js'), 'utf8'))[1];
+const nextVersion = initialVersion + '-qa-update';
+let version = initialVersion;
 let missing = 'assets/audio/04-hooked-on-a-feeling.mp3';
 const transfers = new Map();
 const prefix = '/nested/panic/';
@@ -20,13 +22,17 @@ const types = { '.js': 'text/javascript', '.html': 'text/html', '.css': 'text/cs
 const server = createServer((req, res) => {
   const pathname = decodeURIComponent(new URL(req.url, 'http://localhost').pathname);
   if (!pathname.startsWith(prefix)) { res.writeHead(404).end(); return; }
+  // Match Cloudflare Static Assets: /index.html redirects to the directory URL.
+  if (pathname === prefix + 'index.html') {
+    res.writeHead(307, { Location: prefix }).end(); return;
+  }
   const relative = pathname.slice(prefix.length) || 'index.html';
   const file = path.resolve(root, relative);
   if (!file.startsWith(root + path.sep) || relative === missing || !fs.existsSync(file) || !fs.statSync(file).isFile()) {
     res.writeHead(404).end(); return;
   }
   let body = fs.readFileSync(file);
-  if (relative === 'sw.js') body = Buffer.from(body.toString().replace("SHELL_VERSION = 'v1'", `SHELL_VERSION = '${version}'`));
+  if (relative === 'sw.js') body = Buffer.from(body.toString().replace(/SHELL_VERSION = '[^']+'/, `SHELL_VERSION = '${version}'`));
   transfers.set(relative, (transfers.get(relative) || 0) + 1);
   res.writeHead(200, { 'Content-Type': types[path.extname(file)] || 'application/octet-stream', 'Cache-Control': 'no-store', 'Content-Length': body.length });
   res.end(body);
@@ -76,6 +82,23 @@ async function main() {
     check('Browser parses manifest without errors', manifest.errors.length === 0 && parsed.name.includes('P!ATDXLILY') && parsed.display === 'standalone');
     check('Browser reports zero PWA installability errors', installability.installabilityErrors.length === 0);
     check('Manifest includes 192/512 icons and separate maskable icon', parsed.icons.some(icon => icon.sizes === '192x192') && parsed.icons.some(icon => icon.sizes === '512x512' && icon.purpose === 'maskable'));
+
+    const redirectedIndex = await page.evaluate(async () => {
+      const name = (await caches.keys()).find(name => name.includes('shell-'));
+      const response = await (await caches.open(name)).match(new URL('index.html', document.baseURI).href);
+      return response?.redirected;
+    });
+    check('Regression fixture caches the same redirected index as Cloudflare', redirectedIndex === true);
+    await page.reload();
+    check('Online PWA reload accepts canonical cached HTML', await page.locator('.track').count() === 10);
+    // Force the redirected legacy fallback once; the guard must rebuild it.
+    await page.evaluate(async () => {
+      const name = (await caches.keys()).find(name => name.includes('shell-'));
+      await (await caches.open(name)).delete(new URL('./', document.baseURI).href);
+    });
+    await page.reload();
+    check('Redirected cached fallback remains navigable when canonical entry is missing', await page.locator('.track').count() === 10);
+    await page.getByText('Lista para usar sin conexión: canciones, karaoke e imágenes guardados.', { exact: true }).waitFor();
 
     await context.setOffline(true);
     await cdp.send('Network.enable');
@@ -154,7 +177,7 @@ async function main() {
     await page.evaluate(async () => { await caches.open('unrelated-test-cache'); document.querySelector('#audio-player').muted = true; });
     await page.locator('#play-toggle').click();
     await page.waitForFunction(() => !document.querySelector('#audio-player').paused);
-    version = 'v2';
+    version = nextVersion;
     await page.evaluate(async () => (await navigator.serviceWorker.ready).update());
     await page.locator('#pwa-update').waitFor({ state: 'visible', timeout: 60000 });
     check('New service worker waits without interrupting playback', await page.evaluate(async () => Boolean((await navigator.serviceWorker.ready).waiting) && !document.querySelector('#audio-player').paused));
@@ -162,7 +185,7 @@ async function main() {
     await page.waitForFunction(() => document.querySelector('#pwa-update').hidden && document.querySelector('#audio-player').paused);
     await page.getByText('Lista para usar sin conexión: canciones, karaoke e imágenes guardados.', { exact: true }).waitFor();
     const cacheNames = await page.evaluate(() => caches.keys());
-    check('Accepted update activates v2 and removes only old owned shell', cacheNames.some(name => name.endsWith('shell-v2')) && !cacheNames.some(name => name.endsWith('shell-v1')) && cacheNames.includes('unrelated-test-cache'));
+    check('Accepted update activates next version and removes only old owned shell', cacheNames.some(name => name.endsWith(`shell-${nextVersion}`)) && !cacheNames.some(name => name.endsWith(`shell-${initialVersion}`)) && cacheNames.includes('unrelated-test-cache'));
     check('UI update reuses unchanged media cache', transfers.get('assets/audio/01-night-birds.mp3') === 1);
 
     server.closeAllConnections();
