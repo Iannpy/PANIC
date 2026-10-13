@@ -1,0 +1,11 @@
+Herramienta: ImageGen integrada (no CLI ni clave API).
+Imágenes generadas para esta demo; no representan portadas oficiales.
+
+Salida: C:\Users\DELL\Desktop\PANIC\assets\canyon.png
+Referencia visual: C:\Users\DELL\Desktop\PANIC\pasted_file_PZ275C_image.png
+Prompt:
+Use case: photorealistic-natural. Asset type: wide landscape background for a music website. Create a high resolution editorial photograph INSIDE a flowing sandstone slot canyon, close textured undulating red burnt orange walls wrapping the scene, a broad beautiful S-curve cavity center-right and narrow lavender sunlight reflected across a low ridge. Extremely similar atmosphere to Antelope Canyon, sculptural walls, deep rust red, peach light, lavender reflections. Wide horizontal 3:2 composition, no sky, no people, no objects, no type, no logos, no UI. Dense photographic texture, dramatic natural lighting, full bleed. The provided image is ONLY an art direction reference; generate ONLY the clean canyon photograph, NOT the website, NOT its text or frame.
+
+Salida: C:\Users\DELL\Desktop\PANIC\assets\silk.png
+Prompt:
+Use case: photorealistic-natural. Asset type: monochrome editorial texture photograph for a music website. A macro photograph of crumpled liquid silver satin fabric. Broad flowing diagonal folds, tactile smooth heavy metallic silk, high contrast silver highlights and graphite black shadows, beautiful rich grain, full bleed horizontal composition 3:2. No objects, no text, no logos, no UI, no frame. A studio-lit abstract editorial photograph, NOT a rendering.

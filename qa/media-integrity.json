@@ -1,0 +1,142 @@
+{
+  "originalsUnchanged": true,
+  "originalSHA256": {
+    "pasted_file_PZ275C_image.png": "4677ad7ce94521014c886b10d40be597c1b50112020213e0a3443a3093c2e62e",
+    "pistas\\01 - Night Birds.mpeg": "920900b8444c2a08fea1d53938f1f7b973f4224cb28e42a64bfcf218c83d2747",
+    "pistas\\02 - Crosses.mpeg": "688410df4814e07fe3012bbea1bcfd3c9f32380fc0c57d49e39b72456b0dd433",
+    "pistas\\03 - If I Were You (I Really Wouldn't Do That).mpeg": "2fcf4155efed5ac31f0c38792aa8bfc9ea450c6e74853beb13eeb5deaf6f285b",
+    "pistas\\04 - Hooked on a Feeling.mpeg": "7ecb01457c95ac588e00d6951cf19bc748c95f87138c370b89fbd29507382639",
+    "pistas\\05 - Tied to the Tracks.mpeg": "5a5a793440c4b168f06199b7ea323e01e5ee85ba7ddc320fe354112be6968b18",
+    "pistas\\06 - Lullaby.mpeg": "c7ad00b7f877bfd3096542a1763096782632026ce61bb9e3168781731c01a862",
+    "pistas\\07 - Diamonds and Daggers.mpeg": "b0234508789f2fdc4d7d3072099bf1d78703a26afdefffc4caf709b04c0f3e66",
+    "pistas\\08 - Little Secret.mpeg": "30c8ecc815042335de8516657369e339d415f94b91705734b09e0a2ed381d8cc",
+    "pistas\\09 - Metal Song.mpeg": "a875fc1aaa5637d91d1ccb1ef52cd357a05f0b6d9813fb72d56d2c5a06950e84",
+    "pistas\\10 - Mercenary.mpeg": "6acb99b61b7ad0529f018f6d5d37e2b3482fe489319f1c1db03ab95e3b4226b8",
+    "portadas\\Batman - Arkham City - The Album.jpg": "3c2b6ceb957a0ce0f31ccdc2a130581291cecebb5d46aafee9e815c4d41a49d7",
+    "portadas\\Batman - Arkham City - The Album.webp": "954f37bbc14deba614761b736033b5b4e148414f22c32e12a03c1768ca891daf",
+    "portadas\\Death of a Bachelor.jpg": "02c69c62b2212a2b58d9ef18b674b7b015ee0d42ea9ac9ff4189c4974f25e624",
+    "portadas\\Death of a Bachelor.webp": "53c5e74eabdce5e1c0a5a10da270e6aaabc9e98de907da77855c5081647db3c0",
+    "portadas\\Nicotine EP.jpg": "a0c1a76de2d7a4fc06a24c8e9eb402ce020082c3e55105daa104020a57ebd8fd",
+    "portadas\\Nicotine EP.webp": "3fdd4427ff3f730e2714788384145058ea6e31697d0e55702502335348c36376",
+    "portadas\\Pray for the Wicked.jpg": "3b99f85bc738cd4f23612f50f1c57ea263484187eb04e7c07d22ed5527230b27",
+    "portadas\\Pray for the Wicked.webp": "d68b4ce865b42aa8307173fb0002cdfd5bbe6aec8bc5ae40e1ab886bb0648f02",
+    "portadas\\Pretty. Odd..jpg": "3a7a03d484386ea71e8ebe8567bd5283a14b66d0cc0e881bda1700c8a87d8454",
+    "portadas\\Pretty. Odd..webp": "69ee05c5fce82e1463dace5d35c14283d9fe33d865f73d823a122593e1ced508",
+    "portadas\\Too Weird to Live, Too Rare to Die!.jpg": "3bf4ae65de68251a256e9722742f00f5b447fe19dcfa198254648b7a676f671a",
+    "portadas\\Too Weird to Live, Too Rare to Die!.webp": "3724649bab0aa94170891fea8aae2db2ebb05f36331bd57c032c585109bb0f94",
+    "portadas\\Vices & Virtues.jpg": "ed2dabdb046d12d517da3de103c422c6fde7422b00021d58eb3ce78b208e644b",
+    "portadas\\Vices & Virtues.webp": "82d6ea7906750f52803ab23c3bcd33d3ba1ad126fc9d282b49da1461caced4c6"
+  },
+  "tracks": [
+    {
+      "source": "pistas/01 - Night Birds.mpeg",
+      "copy": "assets/audio/01-night-birds.mp3",
+      "container": "mp3",
+      "codec": "mp3",
+      "decodedAudioIdentical": true,
+      "seekHeaderPreservedWithoutNewGaplessTrim": true,
+      "pcmSHA256": "SHA256=ab769d6d20b0edc4cb670deaa905858076e5c06e9d53f7d5e736137f4a65051a",
+      "coverMatchedAPIC": true,
+      "coverCopyIdentical": true
+    },
+    {
+      "source": "pistas/02 - Crosses.mpeg",
+      "copy": "assets/audio/02-crosses.mp3",
+      "container": "mp3",
+      "codec": "mp3",
+      "decodedAudioIdentical": true,
+      "seekHeaderPreservedWithoutNewGaplessTrim": true,
+      "pcmSHA256": "SHA256=b3a9640359f907e9188b85088279755f6aa46ff807c7fc6d6724d3bf7562c8af",
+      "coverMatchedAPIC": true,
+      "coverCopyIdentical": true
+    },
+    {
+      "source": "pistas/03 - If I Were You (I Really Wouldn't Do That).mpeg",
+      "copy": "assets/audio/03-if-i-were-you-i-really-wouldn-t-do-that.mp3",
+      "container": "mp3",
+      "codec": "mp3",
+      "decodedAudioIdentical": true,
+      "seekHeaderPreservedWithoutNewGaplessTrim": true,
+      "pcmSHA256": "SHA256=6dd044bd1d632c0e3459681b83035fafb230e7d2510d14799d1befad28c9b181",
+      "coverMatchedAPIC": true,
+      "coverCopyIdentical": true
+    },
+    {
+      "source": "pistas/04 - Hooked on a Feeling.mpeg",
+      "copy": "assets/audio/04-hooked-on-a-feeling.mp3",
+      "container": "mp3",
+      "codec": "mp3",
+      "decodedAudioIdentical": true,
+      "seekHeaderPreservedWithoutNewGaplessTrim": true,
+      "pcmSHA256": "SHA256=fe7948f9b41e06feecbf9be1fe57238ca66cc7df4d9e3961703d8b9e36e7bbfd",
+      "coverMatchedAPIC": true,
+      "coverCopyIdentical": true
+    },
+    {
+      "source": "pistas/05 - Tied to the Tracks.mpeg",
+      "copy": "assets/audio/05-tied-to-the-tracks.mp3",
+      "container": "mp3",
+      "codec": "mp3",
+      "decodedAudioIdentical": true,
+      "seekHeaderPreservedWithoutNewGaplessTrim": true,
+      "pcmSHA256": "SHA256=c990ea596213ecf9bfacd11b7e4a70522ba89cab4c596518554f4d037d0f4f4d",
+      "coverMatchedAPIC": true,
+      "coverCopyIdentical": true
+    },
+    {
+      "source": "pistas/06 - Lullaby.mpeg",
+      "copy": "assets/audio/06-lullaby.mp3",
+      "container": "mp3",
+      "codec": "mp3",
+      "decodedAudioIdentical": true,
+      "seekHeaderPreservedWithoutNewGaplessTrim": true,
+      "pcmSHA256": "SHA256=810dcafaf6c9539de3967647bd440d1443d87874e1e393123a9382ced8510400",
+      "coverMatchedAPIC": true,
+      "coverCopyIdentical": true
+    },
+    {
+      "source": "pistas/07 - Diamonds and Daggers.mpeg",
+      "copy": "assets/audio/07-diamonds-and-daggers.mp3",
+      "container": "mp3",
+      "codec": "mp3",
+      "decodedAudioIdentical": true,
+      "seekHeaderPreservedWithoutNewGaplessTrim": true,
+      "pcmSHA256": "SHA256=03ce028cc07226e56f7d087538f71aff0cc3f35f8e7efb60235633472b00e453",
+      "coverMatchedAPIC": true,
+      "coverCopyIdentical": true
+    },
+    {
+      "source": "pistas/08 - Little Secret.mpeg",
+      "copy": "assets/audio/08-little-secret.mp3",
+      "container": "mp3",
+      "codec": "mp3",
+      "decodedAudioIdentical": true,
+      "seekHeaderPreservedWithoutNewGaplessTrim": true,
+      "pcmSHA256": "SHA256=d35e50835a1510cc9d4dccec24d87d6bb694b0ad6e0fac3082258208b1e2ac4d",
+      "coverMatchedAPIC": true,
+      "coverCopyIdentical": true
+    },
+    {
+      "source": "pistas/09 - Metal Song.mpeg",
+      "copy": "assets/audio/09-metal-song.mp3",
+      "container": "mp3",
+      "codec": "mp3",
+      "decodedAudioIdentical": true,
+      "seekHeaderPreservedWithoutNewGaplessTrim": true,
+      "pcmSHA256": "SHA256=259148b5a792e16ba87d186a89d22201a534fe4a9c9a7a39de6681839a482eb5",
+      "coverMatchedAPIC": true,
+      "coverCopyIdentical": true
+    },
+    {
+      "source": "pistas/10 - Mercenary.mpeg",
+      "copy": "assets/audio/10-mercenary.mp3",
+      "container": "mp3",
+      "codec": "mp3",
+      "decodedAudioIdentical": true,
+      "seekHeaderPreservedWithoutNewGaplessTrim": true,
+      "pcmSHA256": "SHA256=2dbf56c2ae63783909a8ef1bbd01719c2aea24bb865a1e639a6c4e255c0dd214",
+      "coverMatchedAPIC": true,
+      "coverCopyIdentical": true
+    }
+  ]
+}

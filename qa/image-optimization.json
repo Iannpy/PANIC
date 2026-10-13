@@ -1,0 +1,120 @@
+{
+  "format": "WebP",
+  "quality": 86,
+  "method": 6,
+  "originalsPreserved": true,
+  "originalBytes": 33804661,
+  "optimizedBytes": 2588482,
+  "bytesSaved": 31216179,
+  "percentSaved": 92.34,
+  "images": [
+    {
+      "source": "assets/canyon.png",
+      "sourceSHA256": "8539c180abf034678648e0b404b60ff7e671db69faf0123b9768cd5f89c09c2b",
+      "sourceBytes": 5947627,
+      "optimized": "assets/optimized/canyon.webp",
+      "optimizedBytes": 607914,
+      "width": 1920,
+      "height": 1920
+    },
+    {
+      "source": "assets/silk.png",
+      "sourceSHA256": "7cfc5038e266ac0fd2d83895bd2d56de93f11c4e6abc0ad7bca43f84da744142",
+      "sourceBytes": 7145540,
+      "optimized": "assets/optimized/silk.webp",
+      "optimizedBytes": 508628,
+      "width": 2304,
+      "height": 1536
+    },
+    {
+      "source": "assets/karaoke-concepts/01-night-birds.png",
+      "sourceSHA256": "29fa2108b272223675a60d13c6074a4923ce38025b1c3f591bc8eab87a1147d4",
+      "sourceBytes": 2161127,
+      "optimized": "assets/optimized/karaoke/01-night-birds.webp",
+      "optimizedBytes": 166228,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "source": "assets/karaoke-concepts/02-crosses.png",
+      "sourceSHA256": "9f705cf3d39f40435d03ca91e230d32eedbe4c86df5417d8d939781ea5d38e42",
+      "sourceBytes": 2039328,
+      "optimized": "assets/optimized/karaoke/02-crosses.webp",
+      "optimizedBytes": 130558,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "source": "assets/karaoke-concepts/03-if-i-were-you.png",
+      "sourceSHA256": "b9c4517bfbf47a61fa8563410279277d0b96877511b2353255505199190444cc",
+      "sourceBytes": 2170966,
+      "optimized": "assets/optimized/karaoke/03-if-i-were-you.webp",
+      "optimizedBytes": 173962,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "source": "assets/karaoke-concepts/04-hooked-on-a-feeling.png",
+      "sourceSHA256": "26cad6de350759035cabae1cc8c0cfe42cb92c7e85b528fcd4798dbd243377c5",
+      "sourceBytes": 2130121,
+      "optimized": "assets/optimized/karaoke/04-hooked-on-a-feeling.webp",
+      "optimizedBytes": 149854,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "source": "assets/karaoke-concepts/05-tied-to-the-tracks.png",
+      "sourceSHA256": "73841d5f8f6f7e24f862a9f0e4dea66aeddd7aecbf693c182cb7c2c033589085",
+      "sourceBytes": 1878602,
+      "optimized": "assets/optimized/karaoke/05-tied-to-the-tracks.webp",
+      "optimizedBytes": 120976,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "source": "assets/karaoke-concepts/06-lullaby.png",
+      "sourceSHA256": "55d9ee6024e816947bdc739fe12280a23c90d44aaeeffd2bcbd86e13b246bdb7",
+      "sourceBytes": 2033611,
+      "optimized": "assets/optimized/karaoke/06-lullaby.webp",
+      "optimizedBytes": 140502,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "source": "assets/karaoke-concepts/07-diamonds-and-daggers.png",
+      "sourceSHA256": "0c6b8354cdf64eeccb3baea78f9570e355d16301684031fb878379e380e6568e",
+      "sourceBytes": 2136230,
+      "optimized": "assets/optimized/karaoke/07-diamonds-and-daggers.webp",
+      "optimizedBytes": 168456,
+      "width": 1672,
+      "height": 940
+    },
+    {
+      "source": "assets/karaoke-concepts/08-little-secret.png",
+      "sourceSHA256": "f2bd6480d37c18836d65621a942465a82f19c0ddbc2ad2a91070b501608d2048",
+      "sourceBytes": 1910711,
+      "optimized": "assets/optimized/karaoke/08-little-secret.webp",
+      "optimizedBytes": 112004,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "source": "assets/karaoke-concepts/09-metal-song.png",
+      "sourceSHA256": "ef6df88df818b31e12beaa7195b38d4f213a1fb9089e5592be42ae37ab49881a",
+      "sourceBytes": 2234814,
+      "optimized": "assets/optimized/karaoke/09-metal-song.webp",
+      "optimizedBytes": 185342,
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "source": "assets/karaoke-concepts/10-mercenary.png",
+      "sourceSHA256": "249a277079321dd2e8376f80263f696b16e67769310ce3f6bd4499a0b843c71d",
+      "sourceBytes": 2015984,
+      "optimized": "assets/optimized/karaoke/10-mercenary.webp",
+      "optimizedBytes": 124058,
+      "width": 1672,
+      "height": 941
+    }
+  ]
+}

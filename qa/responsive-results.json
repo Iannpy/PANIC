@@ -1,0 +1,177 @@
+[
+  {
+    "view": "inicio",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "informacion",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "musica",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "videos",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "novedades",
+    "width": 320,
+    "scrollWidth": 320,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "inicio",
+    "width": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "informacion",
+    "width": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "musica",
+    "width": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "videos",
+    "width": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "novedades",
+    "width": 390,
+    "scrollWidth": 390,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "inicio",
+    "width": 768,
+    "scrollWidth": 768,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "informacion",
+    "width": 768,
+    "scrollWidth": 768,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "musica",
+    "width": 768,
+    "scrollWidth": 768,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "videos",
+    "width": 768,
+    "scrollWidth": 768,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "novedades",
+    "width": 768,
+    "scrollWidth": 768,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "inicio",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "informacion",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "musica",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "videos",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "novedades",
+    "width": 1024,
+    "scrollWidth": 1024,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "inicio",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "informacion",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "musica",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "videos",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "overflow": false,
+    "albumOverflow": false
+  },
+  {
+    "view": "novedades",
+    "width": 1440,
+    "scrollWidth": 1440,
+    "overflow": false,
+    "albumOverflow": false
+  }
+]

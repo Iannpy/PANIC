@@ -1,0 +1,266 @@
+{
+  "passed": 65,
+  "checks": [
+    {
+      "name": "Karaoke route, lyrics and deferred audio without autoplay",
+      "passed": true
+    },
+    {
+      "name": "One shared native audio",
+      "passed": true
+    },
+    {
+      "name": "Artwork is confined to Karaoke",
+      "passed": true
+    },
+    {
+      "name": "Ten sets of timed lyrics",
+      "passed": true
+    },
+    {
+      "name": "1: chronological lyrics",
+      "passed": true
+    },
+    {
+      "name": "2: chronological lyrics",
+      "passed": true
+    },
+    {
+      "name": "3: chronological lyrics",
+      "passed": true
+    },
+    {
+      "name": "4: chronological lyrics",
+      "passed": true
+    },
+    {
+      "name": "5: chronological lyrics",
+      "passed": true
+    },
+    {
+      "name": "6: chronological lyrics",
+      "passed": true
+    },
+    {
+      "name": "7: chronological lyrics",
+      "passed": true
+    },
+    {
+      "name": "8: chronological lyrics",
+      "passed": true
+    },
+    {
+      "name": "9: chronological lyrics",
+      "passed": true
+    },
+    {
+      "name": "10: chronological lyrics",
+      "passed": true
+    },
+    {
+      "name": "Uncertain source wording remains marked",
+      "passed": true
+    },
+    {
+      "name": "1: its local artwork fills only the lyrics box",
+      "passed": true
+    },
+    {
+      "name": "1: selector loads its own lyrics",
+      "passed": true
+    },
+    {
+      "name": "1: instrumental is the actual source",
+      "passed": true
+    },
+    {
+      "name": "1: original restored",
+      "passed": true
+    },
+    {
+      "name": "2: its local artwork fills only the lyrics box",
+      "passed": true
+    },
+    {
+      "name": "2: selector loads its own lyrics",
+      "passed": true
+    },
+    {
+      "name": "2: instrumental is the actual source",
+      "passed": true
+    },
+    {
+      "name": "2: original restored",
+      "passed": true
+    },
+    {
+      "name": "3: its local artwork fills only the lyrics box",
+      "passed": true
+    },
+    {
+      "name": "3: selector loads its own lyrics",
+      "passed": true
+    },
+    {
+      "name": "3: instrumental is the actual source",
+      "passed": true
+    },
+    {
+      "name": "3: original restored",
+      "passed": true
+    },
+    {
+      "name": "4: its local artwork fills only the lyrics box",
+      "passed": true
+    },
+    {
+      "name": "4: selector loads its own lyrics",
+      "passed": true
+    },
+    {
+      "name": "4: instrumental is the actual source",
+      "passed": true
+    },
+    {
+      "name": "4: original restored",
+      "passed": true
+    },
+    {
+      "name": "5: its local artwork fills only the lyrics box",
+      "passed": true
+    },
+    {
+      "name": "5: selector loads its own lyrics",
+      "passed": true
+    },
+    {
+      "name": "5: instrumental is the actual source",
+      "passed": true
+    },
+    {
+      "name": "5: original restored",
+      "passed": true
+    },
+    {
+      "name": "6: its local artwork fills only the lyrics box",
+      "passed": true
+    },
+    {
+      "name": "6: selector loads its own lyrics",
+      "passed": true
+    },
+    {
+      "name": "6: instrumental is the actual source",
+      "passed": true
+    },
+    {
+      "name": "6: original restored",
+      "passed": true
+    },
+    {
+      "name": "7: its local artwork fills only the lyrics box",
+      "passed": true
+    },
+    {
+      "name": "7: selector loads its own lyrics",
+      "passed": true
+    },
+    {
+      "name": "7: instrumental is the actual source",
+      "passed": true
+    },
+    {
+      "name": "7: original restored",
+      "passed": true
+    },
+    {
+      "name": "8: its local artwork fills only the lyrics box",
+      "passed": true
+    },
+    {
+      "name": "8: selector loads its own lyrics",
+      "passed": true
+    },
+    {
+      "name": "8: instrumental is the actual source",
+      "passed": true
+    },
+    {
+      "name": "8: original restored",
+      "passed": true
+    },
+    {
+      "name": "9: its local artwork fills only the lyrics box",
+      "passed": true
+    },
+    {
+      "name": "9: selector loads its own lyrics",
+      "passed": true
+    },
+    {
+      "name": "9: instrumental is the actual source",
+      "passed": true
+    },
+    {
+      "name": "9: original restored",
+      "passed": true
+    },
+    {
+      "name": "10: its local artwork fills only the lyrics box",
+      "passed": true
+    },
+    {
+      "name": "10: selector loads its own lyrics",
+      "passed": true
+    },
+    {
+      "name": "10: instrumental is the actual source",
+      "passed": true
+    },
+    {
+      "name": "10: original restored",
+      "passed": true
+    },
+    {
+      "name": "Seeking highlights the corresponding line",
+      "passed": true
+    },
+    {
+      "name": "Paused switch preserves playhead",
+      "passed": true
+    },
+    {
+      "name": "Rapid mode changes preserve the final source and time",
+      "passed": true
+    },
+    {
+      "name": "Artwork disappears outside Karaoke",
+      "passed": true
+    },
+    {
+      "name": "Leaving karaoke restores original without losing playback",
+      "passed": true
+    },
+    {
+      "name": "Missing instrumental never falls back to voiced audio",
+      "passed": true
+    },
+    {
+      "name": "Exit recovers original after instrumental failure",
+      "passed": true
+    },
+    {
+      "name": "Song selector retains instrumental mode",
+      "passed": true
+    },
+    {
+      "name": "Ending advances to the next instrumental",
+      "passed": true
+    },
+    {
+      "name": "Last track stops instead of wrapping",
+      "passed": true
+    }
+  ],
+  "url": "http://127.0.0.1:8766/?qa=karaoke-final-report#karaoke"
+}

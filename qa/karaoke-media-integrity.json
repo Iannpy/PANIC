@@ -1,0 +1,116 @@
+{
+  "originalsUnchanged": true,
+  "auditoryReview": "pending: mechanical decode/duration checks do not verify vocal removal by ear",
+  "tracks": [
+    {
+      "source": "assets/audio/01-night-birds.mp3",
+      "instrumental": "assets/audio/instrumental/01-night-birds.mp3",
+      "sourceSHA256": "10e9b0a6441bf05836546d8f9269693414ea349792a4c68b2bc52273a3d69125",
+      "instrumentalSHA256": "315660cf202a58fe1bf6b2a86c3f4ce2b611b053973b0279b34d0aa48150d612",
+      "durationDifferenceSeconds": 0.0261,
+      "sourceDurationSeconds": 204.277551,
+      "instrumentalDurationSeconds": 204.303667,
+      "codec": "mp3",
+      "fullDecodePassed": true
+    },
+    {
+      "source": "assets/audio/02-crosses.mp3",
+      "instrumental": "assets/audio/instrumental/02-crosses.mp3",
+      "sourceSHA256": "99b77ef837f880ecb50eb175f4887c2dcc602ccf83e1b892a781a3323539cbbe",
+      "instrumentalSHA256": "47f163bc86b729d66b887569bf1c513c2faca52df1edd638b715ee9f2d63e5e8",
+      "durationDifferenceSeconds": 0.0261,
+      "sourceDurationSeconds": 230.060408,
+      "instrumentalDurationSeconds": 230.0865,
+      "codec": "mp3",
+      "fullDecodePassed": true
+    },
+    {
+      "source": "assets/audio/03-if-i-were-you-i-really-wouldn-t-do-that.mp3",
+      "instrumental": "assets/audio/instrumental/03-if-i-were-you-i-really-wouldn-t-do-that.mp3",
+      "sourceSHA256": "6d6030d713a81a16e91b4a00ccb29d245b4710a968fd2b5b13f32fc3c39aaa25",
+      "instrumentalSHA256": "44f38370c33733c08dac99988c33f686152a6110ea1fcabf59d0f462c219b90c",
+      "durationDifferenceSeconds": 0.0261,
+      "sourceDurationSeconds": 249.129796,
+      "instrumentalDurationSeconds": 249.155917,
+      "codec": "mp3",
+      "fullDecodePassed": true
+    },
+    {
+      "source": "assets/audio/04-hooked-on-a-feeling.mp3",
+      "instrumental": "assets/audio/instrumental/04-hooked-on-a-feeling.mp3",
+      "sourceSHA256": "8e53c1d7911580f0f2e38b9a70781d89085ce2a5498dcc4d673bd4fee6fa96e1",
+      "instrumentalSHA256": "2fd685c7098bd8355e4870b4c56eec606dbba863d3a95ab414538648a4ca0120",
+      "durationDifferenceSeconds": 0.0261,
+      "sourceDurationSeconds": 215.14449,
+      "instrumentalDurationSeconds": 215.170583,
+      "codec": "mp3",
+      "fullDecodePassed": true
+    },
+    {
+      "source": "assets/audio/05-tied-to-the-tracks.mp3",
+      "instrumental": "assets/audio/instrumental/05-tied-to-the-tracks.mp3",
+      "sourceSHA256": "1518df6f2a336fa9e5dc0d096ca089ce7a242543ea373a4cfab8bfdfc68b1d1e",
+      "instrumentalSHA256": "6b5b7e6209c02d3c42c2655bca534a0bda0689ecb14efd86077dcc420561925b",
+      "durationDifferenceSeconds": 0.0261,
+      "sourceDurationSeconds": 219.977143,
+      "instrumentalDurationSeconds": 220.00325,
+      "codec": "mp3",
+      "fullDecodePassed": true
+    },
+    {
+      "source": "assets/audio/06-lullaby.mp3",
+      "instrumental": "assets/audio/instrumental/06-lullaby.mp3",
+      "sourceSHA256": "6dbd0b455d580bc67256a158ed31949d105ff16b2700a0eb57e99a6a6c9a9211",
+      "instrumentalSHA256": "c247d4b89b069df07a64bc6c68f421fd8ebad921ee5c130a540307c44a50124b",
+      "durationDifferenceSeconds": 0.0261,
+      "sourceDurationSeconds": 127.373061,
+      "instrumentalDurationSeconds": 127.399167,
+      "codec": "mp3",
+      "fullDecodePassed": true
+    },
+    {
+      "source": "assets/audio/07-diamonds-and-daggers.mp3",
+      "instrumental": "assets/audio/instrumental/07-diamonds-and-daggers.mp3",
+      "sourceSHA256": "a34945982be65b826d5cc5e9dede475b451b60921f874f0c67e6d605ea938825",
+      "instrumentalSHA256": "c28482a6619651850f1a999877321e83fd33dae6f44c1182c37951819577df9c",
+      "durationDifferenceSeconds": 0.0261,
+      "sourceDurationSeconds": 199.549388,
+      "instrumentalDurationSeconds": 199.5755,
+      "codec": "mp3",
+      "fullDecodePassed": true
+    },
+    {
+      "source": "assets/audio/08-little-secret.mp3",
+      "instrumental": "assets/audio/instrumental/08-little-secret.mp3",
+      "sourceSHA256": "60cea908523dd1b51dd59773d00b7ffae17d3462c5149d515f52f2a7e65ff10f",
+      "instrumentalSHA256": "6ebd9a19cfe51d99345d70eb0ef96ec70c1e6cdb608ec0491a4ecd0babcfa403",
+      "durationDifferenceSeconds": 0.0261,
+      "sourceDurationSeconds": 194.638367,
+      "instrumentalDurationSeconds": 194.664458,
+      "codec": "mp3",
+      "fullDecodePassed": true
+    },
+    {
+      "source": "assets/audio/09-metal-song.mp3",
+      "instrumental": "assets/audio/instrumental/09-metal-song.mp3",
+      "sourceSHA256": "96a1e02b633d46e79f45d7e3f7b073bcd7ed488c99d60ed16835d7074d0f8ba1",
+      "instrumentalSHA256": "b4558cfde3dc0cc7c3bf6dca5f4e3c335102047f01c54b199f655462967ba443",
+      "durationDifferenceSeconds": 0.0261,
+      "sourceDurationSeconds": 208.169796,
+      "instrumentalDurationSeconds": 208.195917,
+      "codec": "mp3",
+      "fullDecodePassed": true
+    },
+    {
+      "source": "assets/audio/10-mercenary.mp3",
+      "instrumental": "assets/audio/instrumental/10-mercenary.mp3",
+      "sourceSHA256": "2f30850eaf70f900f58ac53e8cbb12696bfdb9f16183d7914482432a97bdc9a9",
+      "instrumentalSHA256": "b4f9330b407a588201d0978ccab1345142445ae344ad6188262ca8cf81fcf5ec",
+      "durationDifferenceSeconds": 0.0405,
+      "sourceDurationSeconds": 166.464,
+      "instrumentalDurationSeconds": 166.504458,
+      "codec": "mp3",
+      "fullDecodePassed": true
+    }
+  ]
+}

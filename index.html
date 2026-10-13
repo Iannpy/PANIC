@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a2402c">
+  <meta name="description" content="P!ATDXLILY reúne diez canciones de Panic! at the Disco en un archivo local para que Lily pueda volver a escucharlas. Fan page independiente y no oficial.">
+  <title>P!ATDXLILY — Diez canciones para Lily</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" as="image" href="assets/optimized/canyon.webp" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="tracks-data.js" defer></script>
+  <script src="lyrics-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Saltar al contenido</a>
+  <header class="page-top" aria-hidden="true"><span>P!ATDXLILY / ARCHIVO SONORO</span><span>DIEZ CANCIONES REUNIDAS</span></header>
+  <main class="frame" id="main-content" tabindex="-1">
+    <div class="stage">
+      <section class="main-panel" aria-label="Archivo musical de P!ATDXLILY">
+        <header class="site-header">
+          <a class="brand" href="#inicio" aria-label="P!ATDXLILY, inicio">P<span>!</span></a>
+          <nav class="main-nav" aria-label="Navegación principal">
+            <a href="#inicio" data-view="inicio">Inicio</a>
+            <a href="#informacion" data-view="informacion">Info</a>
+            <a href="#musica" data-view="musica" aria-current="page">Música</a>
+            <a href="#karaoke" data-view="karaoke">Karaoke</a>
+            <a href="#videos" data-view="videos">El viaje</a>
+            <a href="#novedades" data-view="novedades">Para Lily</a>
+          </nav>
+        </header>
+
+        <div class="view-content">
+          <section class="view music-view" id="view-musica" aria-labelledby="music-heading">
+            <div class="hero-heading"><h1 id="music-heading">PANIC!</h1><p>AT THE DISCO</p></div>
+            <div class="playlist-heading"><span>ARCHIVO MUSICAL</span><span>10 PISTAS / AUDIO LOCAL</span></div>
+            <ol class="track-list" id="track-list" aria-label="Diez canciones reunidas para Lily"></ol>
+            <div class="playlist-bottom"><span>PANIC! EN DIEZ PISTAS.</span><span>VOL. 01</span></div>
+          </section>
+
+          <section class="view karaoke-view" id="view-karaoke" aria-labelledby="karaoke-heading" hidden>
+            <p class="section-kicker">P!ATDXLILY / Canta a tu manera</p>
+            <h1 id="karaoke-heading">KARAOKE.</h1>
+            <div class="karaoke-toolbar">
+              <label for="karaoke-song">Canción</label>
+              <select id="karaoke-song" aria-label="Elegir canción para karaoke"></select>
+              <button id="karaoke-toggle" type="button" aria-pressed="false">Activar solo instrumental</button>
+            </div>
+            <p class="karaoke-note" id="karaoke-note">La letra sigue la canción. Transcripción aproximada: [?] indica un fragmento sin verificar.</p>
+            <div class="lyrics-scroll" id="lyrics-scroll" tabindex="0" aria-label="Letra sincronizada">
+              <div class="lyrics-lines" id="lyrics-lines"></div>
+            </div>
+            <button id="lyrics-follow" class="lyrics-follow" type="button" hidden>Volver a la línea actual</button>
+            <p id="karaoke-error" class="karaoke-error" role="alert" hidden></p>
+          </section>
+
+          <section class="view editorial-view" id="view-inicio" aria-labelledby="home-heading" hidden>
+            <p class="section-kicker">P!ATDXLILY / Archivo personal</p>
+            <h1 id="home-heading">DE VUELTA<br>JUNTAS.</h1>
+            <p class="editorial-copy">Cuando creíste que habías perdido esas diez canciones... Ahora están reunidas aquí para que vuelvas a escucharlas sin rebuscarlas entre mensajes.</p>
+            <a class="outline-link" href="#musica">Escuchar las diez canciones <span aria-hidden="true">↗</span></a>
+            <div class="home-caption"><span>DE VUELTA / ARCHIVO LOCAL</span><span>P!ATDXLILY / 001</span></div>
+          </section>
+
+          <section class="view editorial-view" id="view-informacion" aria-labelledby="info-heading" hidden>
+            <p class="section-kicker">Un archivo con historia</p>
+            <h1 id="info-heading">HECHO<br>PARA LILY.</h1>
+            <p class="editorial-copy">P!ATDXLILY reúne en un solo archivo local las diez canciones de Panic! at the Disco que nunca tuvieron lanzamiento oficial.</p>
+            <dl class="concept-details"><div><dt>Este rincón</dt><dd>P!ATDXLILY</dd></div><div><dt>Artista</dt><dd>Panic! at the Disco</dd></div><div><dt>Dedicatoria</dt><dd>Para Lily, con cariño</dd></div></dl>
+            <p class="section-note">Los títulos, años, álbumes y portadas se prepararon a partir de archivos locales; no están verificados como discografía oficial.</p>
+          </section>
+
+          <section class="view editorial-view video-view" id="view-videos" aria-labelledby="videos-heading" hidden>
+            <p class="section-kicker">Del recuerdo a la escucha</p>
+            <h1 id="videos-heading">RUTA<br>SONORA.</h1>
+            <button class="video-preview" id="video-preview" aria-label="Abrir información sobre el viaje por las diez canciones">
+              <img src="assets/optimized/canyon.webp" alt="Formaciones rojizas de un cañón" width="1920" height="1920" loading="lazy" decoding="async">
+              <span class="video-play" aria-hidden="true">↗</span><span class="video-caption">UN VIAJE POR LAS CANCIONES <small>DIEZ PISTAS / ARCHIVO LOCAL</small></span>
+            </button>
+            <p class="section-note">Elige una canción en Música y deja que este paisaje acompañe la escucha.</p>
+          </section>
+
+          <section class="view editorial-view news-view" id="view-novedades" aria-labelledby="news-heading" hidden>
+            <p class="section-kicker">Una nota para Lily</p>
+            <h1 id="news-heading">VUELVEN<br>A SONAR.</h1>
+            <article class="news-item"><span class="news-date">PARA LILY / CON CARIÑO</span><h2>Las que guardaste como un tesoro.</h2><p>Las descargaste hace años y las cuidaste como algo único. Ahora están juntas en un archivo para que puedas volver a escucharlas.</p><a href="#musica">Escuchar las canciones <span aria-hidden="true">↗</span></a></article>
+          </section>
+        </div>
+        <footer class="panel-footer"><span class="demo-dot" aria-hidden="true"></span><span>P!ATDXLILY — ARCHIVO LOCAL</span><span class="footer-year">DIEZ CANCIONES</span></footer>
+      </section>
+
+      <aside class="album-panel" aria-label="Portada, metadatos y reproductor de audio">
+        <div class="texture texture-rock" role="img" aria-label="Textura de roca en blanco y negro"><span>SONIDO / MATERIA</span></div>
+        <div class="album-card">
+          <div class="album-title"><p class="small-label">DATOS DEL ARCHIVO LOCAL</p><h2 id="album-name">Pray for the Wicked (unreleased)</h2><p class="album-subtitle" id="album-artist">Panic! at the Disco</p></div>
+          <div class="album-details">
+            <div class="cover-wrap"><img class="album-cover" id="album-cover" src="assets/covers/pray-for-the-wicked.webp" width="640" height="640" alt="Portada asociada a Tied to the Tracks: Pray for the Wicked (unreleased)" decoding="async"></div>
+            <dl class="album-facts"><div><dt>Año</dt><dd id="album-year">2017</dd></div><div><dt>Pista</dt><dd id="album-position">05 / 10</dd></div></dl>
+            <dl class="album-facts"><div><dt>Formato</dt><dd>MP3<br><span>Sin recodificar</span></dd></div><div><dt>Origen</dt><dd>Archivo local<br><span>Datos preparados</span></dd></div></dl>
+          </div>
+          <div class="player">
+            <div class="now-playing"><span class="small-label">SELECCIONADA</span><span id="player-track">Tied to the Tracks</span></div>
+            <label class="sr-only" for="seek">Progreso de reproducción</label><input class="seek" id="seek" type="range" min="0" max="220" value="0" step="1" aria-valuetext="0:00 de 3:40" disabled>
+            <div class="player-controls"><time id="elapsed">0:00</time><div class="transport"><button id="previous" aria-label="Canción anterior"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M5 5v10M15 5l-8 5 8 5z"/></svg></button><button class="transport-play" id="play-toggle" aria-label="Reproducir" aria-pressed="false"><span id="play-icon" class="play-icon" aria-hidden="true"></span></button><button id="next" aria-label="Canción siguiente"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M15 5v10M5 5l8 5-8 5z"/></svg></button></div><time id="duration">3:40</time></div>
+            <p class="player-state" id="player-state">EN PAUSA · ARCHIVO LOCAL</p>
+            <p class="player-error" id="player-error" role="alert" hidden></p>
+          </div>
+        </div>
+        <div class="texture texture-silk" role="img" aria-label="Pliegues de seda plateada"><span>EL SILENCIO TAMBIÉN TIENE TEXTURA.</span></div>
+      </aside>
+
+      <div class="side-rail"><span class="rail-edition">P!ATDXLILY</span><span class="rail-word">PARA VOLVER A ESCUCHARLAS</span><span class="rail-demo">LOCAL</span><button id="help-button" aria-label="Información sobre P!ATDXLILY">?</button></div>
+    </div>
+  </main>
+  <footer class="page-bottom"><span>DIEZ CANCIONES REUNIDAS.</span><span>FAN PAGE INDEPENDIENTE · NO OFICIAL</span></footer>
+  <audio id="audio-player" preload="none"></audio>
+  <p class="sr-only" id="status" role="status" aria-live="polite"></p>
+  <dialog id="demo-dialog" aria-labelledby="dialog-title"><button class="dialog-close" id="dialog-close" aria-label="Cerrar información">×</button><p class="small-label">P!ATDXLILY / ARCHIVO PERSONAL</p><h2 id="dialog-title">Un archivo para volver.</h2><p id="dialog-copy">Reuní las diez canciones en este archivo local para que puedas escucharlas juntas. Los títulos, años, álbumes y portadas son datos preparados; no es una discografía verificada ni un sitio oficial. Y si quieres los demás álbumes, invítame una hamburguesa :P</p><button class="dialog-confirm" id="dialog-confirm">Entendido</button></dialog>
+  <noscript><p class="noscript">Activa JavaScript para recorrer el archivo de diez canciones y reproducirlas.</p></noscript>
+</body>
+</html>

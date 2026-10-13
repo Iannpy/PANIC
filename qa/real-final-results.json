@@ -1,0 +1,406 @@
+{
+  "passed": 100,
+  "checks": [
+    {
+      "name": "One native audio and no audiovisual embeds",
+      "passed": true
+    },
+    {
+      "name": "Default fifth track is paused and defers MP3 loading",
+      "passed": true
+    },
+    {
+      "name": "Metadata remains clearly unverified",
+      "passed": true
+    },
+    {
+      "name": "P!ATDXLILY is the document and accessible brand",
+      "passed": true
+    },
+    {
+      "name": "Demo placeholders are absent from page copy",
+      "passed": true
+    },
+    {
+      "name": "Dedication describes the recovered collection",
+      "passed": true
+    },
+    {
+      "name": "Journey label describes the song route, not a video",
+      "passed": true
+    },
+    {
+      "name": "Track 1: paused selection defers audio",
+      "passed": true
+    },
+    {
+      "name": "Track 1: title/album/artist/year",
+      "passed": true
+    },
+    {
+      "name": "Track 1: correct source and cover",
+      "passed": true
+    },
+    {
+      "name": "Track 1: actual finite duration",
+      "passed": true
+    },
+    {
+      "name": "Track 1: complete square cover",
+      "passed": true
+    },
+    {
+      "name": "Track 1: native playback advances",
+      "passed": true
+    },
+    {
+      "name": "Track 1: pause freezes native clock",
+      "passed": true
+    },
+    {
+      "name": "Track 2: paused selection defers audio",
+      "passed": true
+    },
+    {
+      "name": "Track 2: title/album/artist/year",
+      "passed": true
+    },
+    {
+      "name": "Track 2: correct source and cover",
+      "passed": true
+    },
+    {
+      "name": "Track 2: actual finite duration",
+      "passed": true
+    },
+    {
+      "name": "Track 2: complete square cover",
+      "passed": true
+    },
+    {
+      "name": "Track 2: native playback advances",
+      "passed": true
+    },
+    {
+      "name": "Track 2: pause freezes native clock",
+      "passed": true
+    },
+    {
+      "name": "Track 3: paused selection defers audio",
+      "passed": true
+    },
+    {
+      "name": "Track 3: title/album/artist/year",
+      "passed": true
+    },
+    {
+      "name": "Track 3: correct source and cover",
+      "passed": true
+    },
+    {
+      "name": "Track 3: actual finite duration",
+      "passed": true
+    },
+    {
+      "name": "Track 3: complete square cover",
+      "passed": true
+    },
+    {
+      "name": "Track 3: native playback advances",
+      "passed": true
+    },
+    {
+      "name": "Track 3: pause freezes native clock",
+      "passed": true
+    },
+    {
+      "name": "Track 4: paused selection defers audio",
+      "passed": true
+    },
+    {
+      "name": "Track 4: title/album/artist/year",
+      "passed": true
+    },
+    {
+      "name": "Track 4: correct source and cover",
+      "passed": true
+    },
+    {
+      "name": "Track 4: actual finite duration",
+      "passed": true
+    },
+    {
+      "name": "Track 4: complete square cover",
+      "passed": true
+    },
+    {
+      "name": "Track 4: native playback advances",
+      "passed": true
+    },
+    {
+      "name": "Track 4: pause freezes native clock",
+      "passed": true
+    },
+    {
+      "name": "Track 5: paused selection defers audio",
+      "passed": true
+    },
+    {
+      "name": "Track 5: title/album/artist/year",
+      "passed": true
+    },
+    {
+      "name": "Track 5: correct source and cover",
+      "passed": true
+    },
+    {
+      "name": "Track 5: actual finite duration",
+      "passed": true
+    },
+    {
+      "name": "Track 5: complete square cover",
+      "passed": true
+    },
+    {
+      "name": "Track 5: native playback advances",
+      "passed": true
+    },
+    {
+      "name": "Track 5: pause freezes native clock",
+      "passed": true
+    },
+    {
+      "name": "Track 6: paused selection defers audio",
+      "passed": true
+    },
+    {
+      "name": "Track 6: title/album/artist/year",
+      "passed": true
+    },
+    {
+      "name": "Track 6: correct source and cover",
+      "passed": true
+    },
+    {
+      "name": "Track 6: actual finite duration",
+      "passed": true
+    },
+    {
+      "name": "Track 6: complete square cover",
+      "passed": true
+    },
+    {
+      "name": "Track 6: native playback advances",
+      "passed": true
+    },
+    {
+      "name": "Track 6: pause freezes native clock",
+      "passed": true
+    },
+    {
+      "name": "Track 7: paused selection defers audio",
+      "passed": true
+    },
+    {
+      "name": "Track 7: title/album/artist/year",
+      "passed": true
+    },
+    {
+      "name": "Track 7: correct source and cover",
+      "passed": true
+    },
+    {
+      "name": "Track 7: actual finite duration",
+      "passed": true
+    },
+    {
+      "name": "Track 7: complete square cover",
+      "passed": true
+    },
+    {
+      "name": "Track 7: native playback advances",
+      "passed": true
+    },
+    {
+      "name": "Track 7: pause freezes native clock",
+      "passed": true
+    },
+    {
+      "name": "Track 8: paused selection defers audio",
+      "passed": true
+    },
+    {
+      "name": "Track 8: title/album/artist/year",
+      "passed": true
+    },
+    {
+      "name": "Track 8: correct source and cover",
+      "passed": true
+    },
+    {
+      "name": "Track 8: actual finite duration",
+      "passed": true
+    },
+    {
+      "name": "Track 8: complete square cover",
+      "passed": true
+    },
+    {
+      "name": "Track 8: native playback advances",
+      "passed": true
+    },
+    {
+      "name": "Track 8: pause freezes native clock",
+      "passed": true
+    },
+    {
+      "name": "Track 9: paused selection defers audio",
+      "passed": true
+    },
+    {
+      "name": "Track 9: title/album/artist/year",
+      "passed": true
+    },
+    {
+      "name": "Track 9: correct source and cover",
+      "passed": true
+    },
+    {
+      "name": "Track 9: actual finite duration",
+      "passed": true
+    },
+    {
+      "name": "Track 9: complete square cover",
+      "passed": true
+    },
+    {
+      "name": "Track 9: native playback advances",
+      "passed": true
+    },
+    {
+      "name": "Track 9: pause freezes native clock",
+      "passed": true
+    },
+    {
+      "name": "Track 10: paused selection defers audio",
+      "passed": true
+    },
+    {
+      "name": "Track 10: title/album/artist/year",
+      "passed": true
+    },
+    {
+      "name": "Track 10: correct source and cover",
+      "passed": true
+    },
+    {
+      "name": "Track 10: actual finite duration",
+      "passed": true
+    },
+    {
+      "name": "Track 10: complete square cover",
+      "passed": true
+    },
+    {
+      "name": "Track 10: native playback advances",
+      "passed": true
+    },
+    {
+      "name": "Track 10: pause freezes native clock",
+      "passed": true
+    },
+    {
+      "name": "Seek uses real media time and accessible value",
+      "passed": true
+    },
+    {
+      "name": "Next while paused resets without autoplay",
+      "passed": true
+    },
+    {
+      "name": "Previous preserves paused state",
+      "passed": true
+    },
+    {
+      "name": "Selection while playing continues on new audio",
+      "passed": true
+    },
+    {
+      "name": "Rapid switches keep only final source and state",
+      "passed": true
+    },
+    {
+      "name": "Rapid play then pause remains paused",
+      "passed": true
+    },
+    {
+      "name": "Native ended advances and keeps playing",
+      "passed": true
+    },
+    {
+      "name": "Final ended stops rather than loops",
+      "passed": true
+    },
+    {
+      "name": "Play after end restarts real track",
+      "passed": true
+    },
+    {
+      "name": "Manual next wraps last to first",
+      "passed": true
+    },
+    {
+      "name": "Manual previous wraps first to last",
+      "passed": true
+    },
+    {
+      "name": "Autoplay rejection is handled honestly",
+      "passed": true
+    },
+    {
+      "name": "Retry recovers actual playback",
+      "passed": true
+    },
+    {
+      "name": "Navigation inicio",
+      "passed": true
+    },
+    {
+      "name": "Navigation informacion",
+      "passed": true
+    },
+    {
+      "name": "Navigation musica",
+      "passed": true
+    },
+    {
+      "name": "Navigation karaoke",
+      "passed": true
+    },
+    {
+      "name": "Navigation videos",
+      "passed": true
+    },
+    {
+      "name": "Navigation novedades",
+      "passed": true
+    },
+    {
+      "name": "Journey dialog describes the treasured songs",
+      "passed": true
+    },
+    {
+      "name": "Collection help explains the local archive and burger invitation",
+      "passed": true
+    },
+    {
+      "name": "Music no longer claims simulated audio",
+      "passed": true
+    },
+    {
+      "name": "No horizontal overflow",
+      "passed": true
+    }
+  ],
+  "url": "http://127.0.0.1:8766/?qa=real-final-report#musica"
+}
