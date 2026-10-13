@@ -1,4 +1,5 @@
-/assets/audio/
+# Audio fuente sin preparar. Los MP3 que sirve el sitio SÍ se versionan en
+# assets/audio/ (10 pistas + 10 instrumentales); este directorio es el origen.
 /pistas/
 
 # Artefactos de QA / export de Lovable

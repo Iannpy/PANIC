@@ -25,9 +25,8 @@ portadas/
 assets/karaoke-concepts/
 pistas/
 
-# OJO: assets/audio/ NO se ignora a propósito. Son los MP3 que el sitio sirve,
-# pero están en .gitignore por derechos de autor, así que el despliegue no los
-# incluye hasta que se decida cómo distribuirlos.
+# OJO: assets/audio/ NO se ignora a propósito: son los 20 MP3 que el sitio
+# sirve (10 pistas + 10 instrumentales), versionados en el repo.
 
 # Fuentes de imagen sin optimizar (el sitio sirve la versión WebP)
 assets/canyon.png
